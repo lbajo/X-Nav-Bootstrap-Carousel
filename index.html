@@ -1,25 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rediseño de la web de la ETSIT con Bootstrap</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <!-- Carousel extra styles -->
-    <link rel="stylesheet" href="css/carousel.css">
-  </head>
-  <body>
-    <h1>Esto es un ejercicio para hacer una página para la ETSIT URJC con componentes de Boostrap.</h1>
+     <!-- Carousel extra styles -->
 
-    <p>La página web ha de usar al menos:</p>
-    <ul>
-      <li>Un <i>carousel</i> (con su barra de navegación)</li>
-      <li>Al menos dos componentes más de Boostrap (a elección del alumno)</<li>
-      <li>Al menos un componente de <a href="http://www.bootsnipp.com">Bootsnipp</a></li>
-    </ul>
+    <link rel="stylesheet" href="css/carousel.css">
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#estadio" style="margin-left: 50px;">Estadio</a>
+            <a class="navbar-brand" href="#deparIII" style="margin-left: 150px;">Departamental III</a>
+            <a class="navbar-brand" href="#aularioII" style="margin-left: 150px;">Aulario II</a>
+            <a class="navbar-brand" href="#labosII" style="margin-left: 150px;">Laboratorio II</a>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Bootstrap -->
+    <div class="jumbotron">
+      <h1 style="margin-left: 200px;">Universidad Rey Juan Carlos</h1>
+      <p><a class="btn btn-primary btn-lg" href="#images" style="margin-left: 550px;"role="button">Fotos</a></p>
+    </div>
+
+    
+
+
+     <!-- Bootsnipp -->
+    <div class="container">
+    <div class="row grid-divider">
+    <div class="col-sm-4">
+      <div class="col-padding">
+        <h3>Presentación</h3>
+        <p>Desde su creación en 1996, la Universidad ha orientado su enseñanza y su investigación a buscar soluciones interdisciplinares a los problemas actuales, y se sitúa entre las mejores universidades madrileñas por su excelente oferta académica y su calidad científica internacional.</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="col-padding">
+        <h3>Conócenos</h3>
+        <p>   Estudiar en la URJC ofrece un entorno de aprendizaje y una vida en los campus orientada a impulsar el trabajo y el talento. En la URJC podrás desarrollar todo tu potencial y tener una formación integral, internacional, profesional y humanística. </p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="col-padding">
+        <h3>Posibilidades</h3>
+        <p>La URJC, una Universidad donde: Desarrollar un espíritu crítico. Formarse en el aspecto académico y profesional. Enriquecerse y crecer personal y culturalmente</p>
+      </div>
+    </div>
+    </div>
+    </div>
+     <!---->
+
+    <div class="progress">
+      <div class="progress-bar progress-bar-success" style="width: 35%">
+        <span class="sr-only">35% Complete (success)</span>
+      </div>
+      <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 35%">
+        <span class="sr-only">35% Complete (warning)</span>
+      </div>
+      <div class="progress-bar progress-bar-danger" style="width: 30%">
+        <span class="sr-only">30% Complete (danger)</span>
+      </div>
+    </div>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+  </head>
+
+  <body>
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+
+    <div id="container"></div>
+    <div id="images">
+      <div id="estadio">
+        <img src="images/deporte-estadio.JPG">
+      </div>
+      <div id="deparIII">
+        <img src="images/deparIII-edificio3.JPG">
+      </div>
+      <div id="aularioII">
+        <img src="images/aularioII-edificio.JPG">
+      </div>
+      <div id="labosII">
+        <img src="images/labosII-edificio.JPG">
+      </div>
+    </div>
+
+    <div class="alert alert-danger" role="alert">LORENA BAJO REBOLLO</div>
+    <div class="alert alert-warning" role="alert">INGENIERÍA TELEMÁTICA</div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -27,4 +102,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="js/docs.min.js"></script>
   </body>
+
 </html>
